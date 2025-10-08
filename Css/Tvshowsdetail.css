@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color: #ff2c1f;
+    --text-color: #020307;
+    --bg-color: #fff;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 100px;
+    transition: 0.5s;
+}
+.logo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    align-items: center;
+    color: var(--bg-color);
+    display: flex;
+    column-gap: 0.5rem;
+}
+.bx{
+    color: var(--main-color);
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    column-gap: 5rem;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--bg-color);
+}
+.navbar a::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--main-color);
+    transition: 0.3s linear;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+.navbar a:hover,
+.navbar a:focus{
+    color: var(--main-color);
+}
+.navbar a.active,
+.navbar a.home-active {
+    color: var(--main-color);
+}
+.navbar a.active::after,
+.navbar a.home-active::after {
+    width: 100%;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000001;
+    display: none;
+}
+.btn{
+    padding: 0.7rem 1.4rem;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 400;
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+}
+.btn:hover{
+    background-color: #e01f13;
+}
+.search-icon {
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+.search-icon:hover {
+  color: var(--main-color);
+}
+.detail-body {
+  background: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  
+}
+
+/* Background Banner */
+.tvshow-detail {
+  position: relative;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.tvshow-detail-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.tvshow-detail-bg img {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.tvshow-detail-bg .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 118.5vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+/* Content */
+.tvshow-detail-content {
+  display: flex;
+  gap: 30px;
+  padding: 50px 60px 0 60px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: flex-start;
+}
+.tvshow-poster{
+  margin-top: 80px;
+}
+.tvshow-poster img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+.back-icon {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  font-size: 1.5rem;
+  color: #fff;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+.back-icon:hover {
+  background: var(--main-color, red);
+  color: #fff;
+}
+.tvshow-info{
+  margin-top: 80px;
+}
+.tvshow-info h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.tvshow-info h1 .year {
+  color: #bbb !important;
+  font-weight: normal!important;
+  font-size: 1.2rem !important;
+}
+.tvshow-meta {
+  color: #bbb;
+  margin-bottom: 20px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 20px 0;
+}
+
+.rating .stars i {
+  color: #f5c518;
+  font-size: 1.2rem;
+}
+
+.rating .score {
+  font-size: 1rem;
+  color: #ddd;
+}
+.tvshow-actions {
+  margin-bottom: 25px;
+}
+.tvshow-actions .btn,
+.tvshow-actions .btn-outline {
+  padding: 10px 20px;
+  margin-right: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn {
+  background: var(--main-color, red);
+  color: #fff;
+}
+.btn i{
+  color: var(--bg-color);
+}
+
+.btn-outline {
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.3s ease;
+}
+.btn-outline:hover{
+  background-color: var(--bg-color);
+  color: var(--main-color);
+
+}
+.creator {
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+.h2{
+  margin-top: 20px;
+}
+.season-selector {
+  position: relative;
+  margin-bottom: 1rem;
+  width: 300px;
+}
+.season-selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.season-selector .arrow i {
+  font-size: 1.3rem;
+  color: #e01f13;
+  margin-left: 10px;
+  user-select: none;
+  transition: transform 0.2s;
+}
+#season-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #222;
+  width: 100%;
+  z-index: 10;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  max-height: 123px; /*adjust height for season list*/
+  overflow-y: auto;
+}
+#season-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+#season-list::-webkit-scrollbar-thumb {
+  background: #e01f13;
+  border-radius: 4px;
+}
+
+#season-list::-webkit-scrollbar-track {
+  background: #222;
+}
+
+/* For Firefox */
+#season-list {
+  scrollbar-width: thin;
+  scrollbar-color: #e01f13 #222;
+}
+#season-list li:hover {
+  background: #e01f13;
+}
+#episode-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+#episode-list::-webkit-scrollbar-thumb {
+  background: #e01f13;
+  border-radius: 4px;
+  
+}
+
+#episode-list::-webkit-scrollbar-track {
+  background: #222;
+}
+
+/* For Firefox */
+#episode-list {
+  scrollbar-width: thin;
+  scrollbar-color: #e01f13 #222;
+}
+
+#episode-list {
+  max-height: 100px;
+  overflow-y: auto;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+#episodes-list li {
+  margin-bottom: 0.5rem;
+  background: #222;
+  border-radius: 8px;
+  padding: 10px;
+  color: #fff;
+}
+@media (max-width: 480px) {
+  header {
+    padding: 10px 10px;
+  }
+  header .logo {
+    font-size: 1.1rem;
+  }
+  #menu-icon {
+    display: block;
+    color: var(--bg-color);
+    font-size: 1.8rem;
+  }
+
+  /* Hide navbar by default on mobile */
+  .navbar {
+    position: absolute;
+    top: -570px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    row-gap: 1.4rem;
+    padding: 20px;
+    box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+    transition: 0.2s all linear;
+    text-align: center;
+    width: 100%;
+    z-index: 1001;
+  }
+  .navbar a {
+    color: var(--text-color);
+  }
+  .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+  }
+  .navbar a::after {
+    display: none;
+  }
+  .navbar.active {
+    top: 100%;
+  }
+  /* Hide sign out & search when menu active */
+  .navbar.active ~ .search-icon,
+  .navbar.active ~ .btn {
+    display: none;
+  }
+
+  /* Adjust header layout for small screens */
+  .btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  .search-icon {
+    font-size: 1.2rem;
+  }
+
+  /* ========== Responsive Layout ========== */
+  .tvshow-detail-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 16px 0px 16px;
+    gap: 20px;
+  }
+
+  /* ✅ Back icon fixed at top-left */
+  .back-icon {
+    position: absolute;
+    top: 60px;
+    left: 16px;
+    font-size: 1.5rem;
+    color: #fff;
+    background: transparent;
+    z-index: 10;
+  }
+
+  /* ✅ Poster smaller and centered */
+  .tvshow-poster {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .tvshow-poster img {
+    width: 120px;
+    height: 160px;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+
+  .tvshow-detail-bg img {
+    height: 118vh;
+  }
+
+  /* ✅ Info section below poster */
+  .tvshow-info {
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .tvshow-info h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .tvshow-info h1 span {
+    font-size: 1.3rem;
+  }
+
+  .tvshow-meta {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* ✅ Rating — hide stars on mobile */
+  .rating {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+  }
+  .rating .stars i {
+    font-size: 1rem;
+    color: #f5c518;
+    display: none !important;
+  }
+  .score {
+    width: 100%;
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: center;
+  }
+
+  /* ✅ Watch / Add / Trailer buttons */
+
+  .tvshow-actions .btn {
+    width: 100%;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    padding: 12px 5px;
+    border-radius: 6px;
+  }
+
+  .tvshow-actions .btn-outline {
+    flex: 1;
+    border: 1px solid #666;
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    padding: 10px 5px;
+    text-align: center;
+  }
+
+  /* ✅ Overview + Creator */
+  .tvshow-info h2 {
+    font-size: 1rem;
+    margin-top: 14px;
+    color: var(--bg-color);
+  }
+
+  .tvshow-info p {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* ✅ Season & Episode Section */
+  .season-selector {
+    width: 100%;
+  }
+
+  .season-selected {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  #season-list {
+    max-height: 110px;
+    font-size: 0.85rem;
+  }
+
+  #episode-list {
+    max-height: 100px;
+    font-size: 0.9rem;
+  }
+
+  /* ✅ Overlay readability */
+  .tvshow-detail-bg .overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 10%, rgba(0, 0, 0, 0.6) 50%);
+  }
+}
