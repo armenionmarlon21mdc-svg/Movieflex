@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch List - MovieFlex</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/watchlist.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <header>
+        <a href="#home" class="logo">
+            <i class='bxr bxs-movie'></i> MovieFlex
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="Movies.html">HOME</a></li>
+            <li><a href="MovieSection.html">MOVIES</a></li>
+            <li><a href="tvshows.html">TV SHOWS</a></li>
+            <li><a href="watchlist.html" class="home-active">WATCH LIST</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+        </ul>
+        <div class="search-icon">
+            <i class='bxr bx-search'></i> 
+        </div>
+        <a href="../index.html" class="btn">Sign Out</a>
+    </header>
+
+    <!-- Watchlist Section -->
+    <section class="Latest" id="watchlist">
+        <div class="Shows">
+            <h2 class="category-title" id="watchlist-title">Your Watch List</h2>
+            <div class="shows-wrapper">
+                <!-- Grid container using same layout as TV Shows -->
+                <div class="shows-section active">
+                    <div class="shows-container" id="watchlist-container">
+                        <!-- JS will inject posters here as .box elements -->
+                        <!-- Example (for testing):
+                        <div class="box">
+                            <a href="Tvshowsdetails.html">
+                                <div class="box-img">
+                                    <img src="./img/wildambition.webp" alt="Wild Ambition Bloom">
+                                </div>
+                                <div class="text">
+                                    <h3>Wild Ambition Bloom</h3>
+                                    <p>Drama</p>
+                                    <span><i class='bx bxs-star' style='color:#ddec00'></i>8.5</span>
+                                </div>
+                            </a>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+        <h2>MovieFlex</h2>
+        <p>Your ultimate destination for streaming movies & TV shows.</p>
+        </div>
+
+        <div class="footer-links">
+        <div class="footer-column">
+            <h4>Browse</h4>
+            <ul>
+            <li><a href="MovieSection.html">Movies</a></li>
+            <li><a href="tvshows.html">TV Shows</a></li>
+            <li><a href="watchlist.html">Watch List</a></li>
+            <li><a href="About.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Support</h4>
+            <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 MovieFlex. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <script src="../Js/watchlist.js"></script>
+    
+</body>
+</html>

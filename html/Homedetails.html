@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Details - MovieFlex</title>
+  <link rel="stylesheet" href="../Css/homedetail.css">
+  <link href='https://cdn.boxicons.com/fonts/boxicons.css' rel='stylesheet'>
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="detail-body">
+
+  <header>
+    <a href="#home" class="logo">
+      <i class='bxr bxs-movie'></i> MovieFlex
+    </a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <!-- Menu -->
+    <ul class="navbar">
+      <li><a href="Movies.html" class="home-active">HOME</a></li>
+      <li><a href="MovieSection.html">MOVIES</a></li>
+      <li><a href="tvshows.html">TV SHOWS</a></li>
+      <li><a href="watchlist.html">WATCH LIST</a></li>
+      <li><a href="About.html">ABOUT</a></li>
+    </ul>
+    <div class="search-icon">
+      <i class='bxr bx-search'></i> 
+    </div>
+    <a href="../index.html" class="btn">Sign Out</a>
+  </header>
+
+  <section class="detail-section">
+    <div class="detail-bg">
+      <img id="home-bg" src="" alt="Background">
+      <div class="overlay"></div>
+    </div>
+
+    <div class="detail-content">
+      <div class="detail-poster">
+        <img id="home-poster" src="" alt="Poster">
+      </div>
+
+      <a href="Movies.html" class="back-icon">
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+
+      <div class="detail-info">
+        <h1 id="home-title">Title <span>(Year)</span></h1>
+        <p class="detail-meta" id="home-genre"></p>
+
+        <div class="rating">
+          <span class="stars" id="home-stars"></span>
+          <span class="score" id="home-score">0/10</span>
+        </div>
+
+        <div class="detail-actions">
+          <a href="#" class="btn"><i class="bx bxs-play"></i> Watch Now</a>
+          <a href="#" class="btn-outline"><i class="bx bx-plus"></i> Add to List</a>
+          <a href="#" class="btn-outline"><i class="bx bx-play-circle"></i> Trailer</a>
+        </div>
+
+        <h2>Overview</h2>
+        <p id="home-overview"></p>
+        <p class="creator"><strong>Creator:</strong> <span id="home-creator"></span></p>
+
+        <!-- Will be dynamically filled if TV show -->
+        
+        <div id="tv-seasons-block">
+            <h2 class="h2">Seasons & Episodes</h2>
+        <div class="season-selector">
+            <div class="season-selected">
+                <span id="selected-season-label"></span>
+                <span class="arrow" id="season-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <ul id="season-list"></ul>
+        </div>
+        <ul id="episode-list"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../Js/homedetails.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Plan - MovieFlex</title>
+  <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body class="plans-body">
+
+  <header class="plans-header">
+    <h1 class="logo">MOVIEFLEX</h1>
+    <a href="../index.html" class="signout">Sign Out</a>
+  </header>
+
+  <main class="plans-container">
+    <h2 class="step">Step 2 of 2</h2>
+    <h1 class="title">Choose the plan that's right for you</h1>
+
+    <form id="planForm" action="Movies.html" method="GET">
+      <div class="plans-grid">
+
+        <!-- Plan Card with checkbox -->
+        <label class="plan-card">
+          <input type="radio" name="plan" value="mobile" required>
+          <h3>Mobile <span>480p</span></h3>
+          <ul>
+            <li>Monthly price ₱169</li>
+            <li>Video and sound quality: Fair</li>
+            <li>Resolution: 480p</li>
+            <li>Supported devices: Mobile phone, tablet</li>
+            <li>Devices at the same time: 1</li>
+            <li>Download devices: 1</li>
+          </ul>
+        </label>
+
+        <label class="plan-card">
+          <input type="radio" name="plan" value="basic">
+          <h3>Basic <span>720p</span></h3>
+          <ul>
+            <li>Monthly price ₱279</li>
+            <li>Video and sound quality: Good</li>
+            <li>Resolution: 720p (HD)</li>
+            <li>Supported devices: TV, computer, mobile, tablet</li>
+            <li>Devices at the same time: 1</li>
+            <li>Download devices: 1</li>
+          </ul>
+        </label>
+
+        <label class="plan-card">
+          <input type="radio" name="plan" value="standard">
+          <h3>Standard <span>1080p</span></h3>
+          <ul>
+            <li>Monthly price ₱449</li>
+            <li>Video and sound quality: Great</li>
+            <li>Resolution: 1080p (Full HD)</li>
+            <li>Supported devices: TV, computer, mobile, tablet</li>
+            <li>Devices at the same time: 2</li>
+            <li>Download devices: 2</li>
+          </ul>
+        </label>
+
+        <label class="plan-card popular">
+          <input type="radio" name="plan" value="premium">
+          <h3>Premium <span>4K + HDR</span></h3>
+          <ul>
+            <li>Monthly price ₱619</li>
+            <li>Video and sound quality: Best</li>
+            <li>Resolution: 4K (Ultra HD) + HDR</li>
+            <li>Spatial audio (Immersive sound): Included</li>
+            <li>Supported devices: TV, computer, mobile, tablet</li>
+            <li>Devices at the same time: 4</li>
+            <li>Download devices: 6</li>
+          </ul>
+        </label>
+      </div>
+
+      <button type="submit" class="btn-next">Next</button>
+    </form>
+  </main>
+
+</body>
+</html>

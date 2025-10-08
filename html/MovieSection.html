@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Movies - MovieFlex</title>
+</head>
+<body>
+    
+    <!-- Nav Bar -->
+    <header>
+        <a href="#home" class="logo">
+            <i class='bxr bxs-movie'></i> MovieFlex
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!-- Menu -->
+        <ul class="navbar">
+            <li><a href="Movies.html">HOME</a></li>
+            <li><a href="MovieSection.html" class="home-active">MOVIES</a></li>
+            <li><a href="tvshows.html">TV SHOWS</a></li>
+            <li><a href="watchlist.html">WATCH LIST</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+        </ul>
+        <div class="search-icon">
+            <i class='bxr bx-search'></i> 
+        </div>
+        <a href="../index.html" class="btn">Sign Out</a>
+    </header>
+
+    <!-- Movies Section -->
+    <section class="Latest" id="movies">  
+        <div class="movies">
+            <!-- Filter Buttons -->
+             <div class="filters">
+                <h2 class="category-title" id="category-title">Latest Movies</h2>
+                <div class="filters-row">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="latest">Latest</button>
+                    <button class="filter-btn" data-category="trending">Trending</button>
+                    <button class="filter-btn" data-category="popular">Popular</button>
+                </div>
+                <a href="" class="Filters"><i class='bxr bx-filter'></i><span>Filters</span></a>
+                </div>
+            </div>
+            <!-- Latest Movies Section -->
+            <div class="movies-wrapper">
+                <div class="movies-section active" id="latest-section">
+                    
+                    <div class="movies-container">
+                        <!-- Latest Movies -->
+                        <!-- box-1  -->
+                        
+                            <div class="box">
+                            <div class="box-img">
+                                <a 
+                                href="moviedetail.html"
+                                data-title="The Delay"
+                                data-year="2025"
+                                data-genre="Comedy"
+                                data-rating="7.1"
+                                data-overview="A hilarious story about procrastination."
+                                data-poster="../img/thedelay.webp"
+                                data-bg="../img/thedelayBG.jpg"
+                                >
+                                <img src="../img/thedelay.webp" alt="">
+                                <div class="text">
+                                    <h3>The Delay</h3>
+                                    <p>Comedy</p>
+                                    <span><i class='bxr bxs-star' style='color:#ddec00'></i>7.1</span>
+                                </div>
+                                </a>
+                            </div>
+                            </div>
+                        <!-- box-2  -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="The Resemblance"
+                            data-year="2023"
+                            data-genre="Drama"
+                            data-rating="5.6"
+                            data-overview="A deep drama about family and identity."
+                            data-poster="../img/theresemblance.webp"
+                            data-bg="../imgBG/ResemblanceBG.jpg"
+                            >
+                            <img src="../img/theresemblance.webp" alt="The Resemblance">
+                            <div class="text">
+                                <h3>The Resemblance</h3>
+                                <p>Drama</p>
+                                <span><i class='bxr bxs-star' style='color:#ddec00'></i>5.6</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-3  -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Mauler"
+                            data-year="2023"
+                            data-genre="Action • Thriller"
+                            data-rating="6.8"
+                            data-overview="A retired fighter is forced back into the underground ring when his past resurfaces."
+                            data-creator="John Smith"
+                            data-poster="../img/mauler.webp"
+                            data-bg="../imgBG/MaulerBG.jpg"
+                            >
+                            <img src="../img/mauler.webp" alt="Mauler">
+                            <div class="text">
+                                <h3>Mauler</h3>
+                                <p>Action</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>6.8</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Better Souls"
+                            data-year="2021"
+                            data-genre="Drama • Mystery"
+                            data-rating="8.2"
+                            data-overview="Two strangers find themselves connected by dreams and must uncover the truth."
+                            data-creator="Sarah Lee"
+                            data-poster="../img/bettersouls.jpg"
+                            data-bg="../imgBG/BittersoulBG.jpg"
+                            >
+                            <img src="../img/bettersouls.jpg" alt="Better Souls">
+                            <div class="text">
+                                <h3>Better Souls</h3>
+                                <p>Drama</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>8.2</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-5  -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Red Static Rising"
+                            data-year="2020"
+                            data-genre="Sci-Fi • Thriller"
+                            data-rating="7.5"
+                            data-overview="In a world where sound can kill, a rebel group discovers the frequency of freedom."
+                            data-creator="James Cole"
+                            data-poster="../img/redstatix.jpeg"
+                            data-bg="../imgBG/RedstaticrisingBG.jpg"
+                            >
+                            <img src="../img/redstatix.jpeg" alt="Red Static Rising">
+                            <div class="text">
+                                <h3>Red Static Rising</h3>
+                                <p>Sci-Fi</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.5</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-6 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="One Of One"
+                            data-year="2024"
+                            data-genre="Documentary"
+                            data-rating="8.7"
+                            data-overview="An inspiring documentary about individuals achieving greatness through persistence."
+                            data-creator="Jane Doe"
+                            data-poster="../img/oneofone.jpeg"
+                            data-bg="../imgBG/OneofoneBG.jpg"
+                            >
+                            <img src="../img/oneofone.jpeg" alt="One Of One">
+                            <div class="text">
+                                <h3>One Of One</h3>
+                                <p>Documentary</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>8.7</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-7 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Easter Bunny Massacre: The Bloody Trail"
+                            data-year="2023"
+                            data-genre="Horror"
+                            data-rating="3.0"
+                            data-overview="A terrifying tale of a cursed bunny costume bringing chaos to a small town."
+                            data-creator="Mike Johnson"
+                            data-poster="../img/bunny.jpeg"
+                            data-bg="../imgBG/EasterbunnyBG.jpg"
+                            >
+                            <img src="../img/bunny.jpeg" alt="Easter Bunny Massacre: The Bloody Trail">
+                            <div class="text">
+                                <h3>Easter Bunny Massacre: The Bloody Trail</h3>
+                                <p>Horror</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>3.0</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-8 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Just Breathe"
+                            data-year="2024"
+                            data-genre="Thriller"
+                            data-rating="9.0"
+                            data-overview="A suspenseful thriller where survival depends on every breath."
+                            data-creator="Emily Carter"
+                            data-poster="../img/just breathe.webp"
+                            data-bg="../imgBG/JustbreatheBG.webp"
+                            >
+                            <img src="../img/just breathe.webp" alt="Just Breathe">
+                            <div class="text">
+                                <h3>Just Breathe</h3>
+                                <p>Thriller</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>9.0</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-9 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Witchboard"
+                            data-year="2024"
+                            data-genre="Horror, Drama, Mystery"
+                            data-rating="5.3"
+                            data-overview="A chilling story where a simple game awakens forces better left undisturbed."
+                            data-creator="Daniel Ross"
+                            data-poster="../img/witchboard.webp"
+                            data-bg="../imgBG/WitchboardBG.jpg"
+                            >
+                            <img src="../img/witchboard.webp" alt="Witchboard">
+                            <div class="text">
+                                <h3>Witchboard</h3>
+                                <p>Horror, Drama, Mystery</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>5.3</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-10 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Relay"
+                            data-year="2024"
+                            data-genre="Thriller, Drama"
+                            data-rating="7.1"
+                            data-overview="A gripping thriller about a secretive organization using people as pawns in a deadly relay."
+                            data-creator="Laura Chen"
+                            data-poster="../img/relay.webp"
+                            data-bg="../imgBG/RelayBG.webp"
+                            >
+                            <img src="../img/relay.webp" alt="Relay">
+                            <div class="text">
+                                <h3>Relay</h3>
+                                <p>Thriller, Drama</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.1</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-11 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Americana"
+                            data-year="2023"
+                            data-genre="Comedy, Crime, Drama"
+                            data-rating="5.8"
+                            data-overview="A dark comedy about crime, corruption, and ambition in modern America."
+                            data-creator="Mark Taylor"
+                            data-poster="../img/american.webp"
+                            data-bg="../imgBG/AmericanaBG.webp"
+                            >
+                            <img src="../img/american.webp" alt="Americana">
+                            <div class="text">
+                                <h3>Americana</h3>
+                                <p>Comedy, Crime, Drama</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>5.8</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-12 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Operation Hadal"
+                            data-year="2023"
+                            data-genre="Action, Drama"
+                            data-rating="5.4"
+                            data-overview="A covert military operation in the ocean's deepest trench reveals a hidden enemy."
+                            data-creator="Anna Smith"
+                            data-poster="../img/operationhadal.webp"
+                            data-bg="../imgBG/OperationhadalBG.jpg"
+                            >
+                            <img src="../img/operationhadal.webp" alt="Operation Hadal">
+                            <div class="text">
+                                <h3>Operation Hadal</h3>
+                                <p>Action, Drama</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>5.4</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-13 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Code 3"
+                            data-year="2024"
+                            data-genre="Action, Comedy"
+                            data-rating="7.7"
+                            data-overview="Two mismatched cops uncover a conspiracy while working on a routine patrol."
+                            data-creator="Robert Lee"
+                            data-poster="../img/code 3.webp"
+                            data-bg="../imgBG/Code3BG.jpg"
+                            >
+                            <img src="../img/code 3.webp" alt="Code 3">
+                            <div class="text">
+                                <h3>Code 3</h3>
+                                <p>Action, Comedy</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.7</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-14 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Chiquita"
+                            data-year="2024"
+                            data-genre="Drama, Mystery"
+                            data-rating="8.3"
+                            data-overview="A mysterious drama following a woman whose secrets unravel her entire village."
+                            data-creator="Maria Gonzalez"
+                            data-poster="../img/chiquita.webp"
+                            data-bg="../imgBG/ChiquitaBG.jpg"
+                            >
+                            <img src="../img/chiquita.webp" alt="Chiquita">
+                            <div class="text">
+                                <h3>Chiquita</h3>
+                                <p>Drama, Mystery</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>8.3</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-15 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="American Sweatshop"
+                            data-year="2023"
+                            data-genre="Drama, Mystery, Thriller"
+                            data-rating="6.0"
+                            data-overview="An investigative drama exposing the secrets of an underground sweatshop empire."
+                            data-creator="David Green"
+                            data-poster="../img/americansweathshop.webp"
+                            data-bg="../imgBG/AmericansweatshopBG.jpg"
+                            >
+                            <img src="../img/americansweathshop.webp" alt="American Sweatshop">
+                            <div class="text">
+                                <h3>American Sweatshop</h3>
+                                <p>Drama, Mystery, Thriller</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>6.0</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-16  -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Brothers From Malta"
+                            data-year="2024"
+                            data-genre="Comedy"
+                            data-rating="5.7"
+                            data-overview="Two brothers from Malta find themselves in a series of hilarious misadventures abroad."
+                            data-creator="Chris Borg"
+                            data-poster="../img/Brothers.webp"
+                            data-bg="../imgBG/BrothersfrommaltaBG.jfif"
+                            >
+                            <img src="../img/Brothers.webp" alt="Brothers From Malta">
+                            <div class="text">
+                                <h3>Brothers From Malta</h3>
+                                <p>Comedy</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>5.7</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-17 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="London Calling"
+                            data-year="2024"
+                            data-genre="Action, Comedy, Drama"
+                            data-rating="7.5"
+                            data-overview="Set in London, this action-packed dramedy follows unlikely heroes caught in a dangerous conspiracy."
+                            data-creator="Paul Harris"
+                            data-poster="../img/londoncalling.webp"
+                            data-bg="../imgBG/LondoncallingBG.avif"
+                            >
+                            <img src="../img/londoncalling.webp" alt="London Calling">
+                            <div class="text">
+                                <h3>London Calling</h3>
+                                <p>Action, Comedy, Drama</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.5</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-18 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Aztec Batman: Clash of Empires"
+                            data-year="2024"
+                            data-genre="Superhero, Action, Adventure, Animation, Fantasy, Sci-Fi"
+                            data-rating="7.0"
+                            data-overview="In an alternate universe, Batman rises in the Aztec empire to battle gods and invaders."
+                            data-creator="Guillermo Ortega"
+                            data-poster="../img/aztecbatman.webp"
+                            data-bg="../imgBG/AztecbatmanBG.jpg"
+                            >
+                            <img src="../img/aztecbatman.webp" alt="Aztec Batman: Clash of Empires">
+                            <div class="text">
+                                <h3>Aztec Batman: Clash of Empires</h3>
+                                <p>Superhero, Action, Adventure, Animation, Fantasy, Sci-Fi</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.0</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Trending Movies Section -->
+                <div class="movies-section" id="trending-section">
+                    <div class="movies-container">
+                        <!-- Trending Movies -->
+                        <!-- box-1  -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="The Dark Knight"
+                            data-year="2008"
+                            data-genre="Action, Superhero, Crime, Drama, Thriller"
+                            data-rating="9.1"
+                            data-overview="When the menace known as the Joker wreaks havoc and chaos on Gotham..."
+                            data-poster="../img/darknight.webp"
+                            data-bg="../imgBG/BatmanBG.webp"
+                            data-section="trending"
+                            >
+                            <img src="../img/darknight.webp" alt="The Dark Knight">
+                            <div class="text">
+                                <h3>The Dark Knight</h3>
+                                <p>Action, Superhero, Crime, Drama, Thriller</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>9.1</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-2 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Interstellar"
+                            data-year="2014"
+                            data-genre="Adventure, Drama, Science Fiction, Time Travel"
+                            data-rating="8.7"
+                            data-overview="A group of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
+                            data-creator="Christopher Nolan"
+                            data-poster="../img/interstellar.webp"
+                            data-bg="../imgBG/InterstellarBG.jpg"
+                            data-section="trending"
+                            >
+                            <img src="../img/interstellar.webp" alt="Interstellar">
+                            <div class="text">
+                                <h3>Interstellar</h3>
+                                <p>Adventure, Drama, Science Fiction, Time Travel</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>8.7</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-3 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="The Wolf Of Wall Street"
+                            data-year="2013"
+                            data-genre="Crime, Drama, Comedy"
+                            data-rating="8.2"
+                            data-overview="Based on the true story of Jordan Belfort, charting his rise and fall on Wall Street."
+                            data-creator="Martin Scorsese"
+                            data-poster="../img/the wolf.webp"
+                            data-bg="../imgBG/ThewolfofwallstreetBG.jpg"
+                            data-section="trending"
+                            >
+                            <img src="../img/the wolf.webp" alt="The Wolf Of Wall Street">
+                            <div class="text">
+                                <h3>The Wolf Of Wall Street</h3>
+                                <p>Crime, Drama, Comedy</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>8.2</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-4 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="The Suicide Squad"
+                            data-year="2021"
+                            data-genre="Action, Comedy, Adventure"
+                            data-rating="7.2"
+                            data-overview="Supervillains are recruited by the government for a dangerous mission on a remote island."
+                            data-creator="James Gunn"
+                            data-poster="../img/thesuicidesquad.webp"
+                            data-bg="../imgBG/ThesuicidesquadBG.jpg"
+                            data-section="trending"
+                            >
+                            <img src="../img/thesuicidesquad.webp" alt="The Suicide Squad">
+                            <div class="text">
+                                <h3>The Suicide Squad</h3>
+                                <p>Action, Comedy, Adventure</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.2</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-5 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Prisoner Of War"
+                            data-year="2005"
+                            data-genre="Action, War, Thriller, History"
+                            data-rating="6.4"
+                            data-overview="A soldier struggles to survive and escape while being held captive during a brutal conflict."
+                            data-creator="John Doe"
+                            data-poster="../img/Prisoner.webp"
+                            data-bg="../imgBG/PrisonerofwarBG.avif"
+                            data-section="trending"
+                            >
+                            <img src="../img/Prisoner.webp" alt="Prisoner Of War">
+                            <div class="text">
+                                <h3>Prisoner Of War</h3>
+                                <p>Action, War, Thriller, History</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>6.4</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-6 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Weapons"
+                            data-year="2023"
+                            data-genre="Horror, Mystery"
+                            data-rating="7.6"
+                            data-overview="A chilling story that unravels when a small town discovers deadly secrets connected to strange weapons."
+                            data-creator="John Smith"
+                            data-poster="../img/weapons.webp"
+                            data-bg="../imgBG/weaponsBG.jfif"
+                            data-section="trending"
+                            >
+                            <img src="../img/weapons.webp" alt="Weapons">
+                            <div class="text">
+                                <h3>Weapons</h3>
+                                <p>Horror, Mystery</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.6</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-7 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Superman"
+                            data-year="1978"
+                            data-genre="Science Fiction, Adventure, Action"
+                            data-rating="7.2"
+                            data-overview="An alien orphan raised on Earth becomes humanity's greatest protector against threats to the world."
+                            data-creator="Richard Donner"
+                            data-poster="../img/Superman.webp"
+                            data-bg="../imgBG/SupermanBG.jpg"
+                            data-section="trending"
+                            >
+                            <img src="../img/Superman.webp" alt="Superman">
+                            <div class="text">
+                                <h3>Superman</h3>
+                                <p>Science Fiction, Adventure, Action</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.2</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-8 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="xXx"
+                            data-year="2002"
+                            data-genre="Action, Adventure, Thriller, Crime"
+                            data-rating="5.9"
+                            data-overview="Xander Cage, an extreme sports enthusiast, is recruited by the government for a dangerous mission."
+                            data-creator="Rob Cohen"
+                            data-poster="../img/xXx.jpg"
+                            data-bg="../imgBG/xXxBG.jpg"
+                            data-section="trending"
+                            >
+                            <img src="../img/xXx.jpg" alt="xXx">
+                            <div class="text">
+                                <h3>xXx</h3>
+                                <p>Action, Adventure, Thriller, Crime</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>5.9</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-9 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="The Naked Gun"
+                            data-year="1988"
+                            data-genre="Comedy, Action, Crime"
+                            data-rating="6.5"
+                            data-overview="Bumbling police lieutenant Frank Drebin tries to prevent an assassination plot while causing chaos everywhere."
+                            data-creator="David Zucker"
+                            data-poster="../img/Nakedgun.webp"
+                            data-bg="../imgBG/NakedgunBG.jpg"
+                            data-section="trending"
+                            >
+                            <img src="../img/Nakedgun.webp" alt="The Naked Gun">
+                            <div class="text">
+                                <h3>The Naked Gun</h3>
+                                <p>Comedy, Action, Crime</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>6.5</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-10 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Nobody 2"
+                            data-year="2025"
+                            data-genre="Action, Thriller"
+                            data-rating="6.4"
+                            data-overview="The unlikely hero returns in a brutal sequel full of revenge, chaos, and redemption."
+                            data-creator="Ilya Naishuller"
+                            data-poster="../img/nobody.webp"
+                            data-bg="../imgBG/Nobody2BG.jpg"
+                            data-section="trending"
+                            >
+                            <img src="../img/nobody.webp" alt="Nobody 2">
+                            <div class="text">
+                                <h3>Nobody 2</h3>
+                                <p>Action, Thriller</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>6.4</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-11 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Trust"
+                            data-year="2023"
+                            data-genre="Thriller"
+                            data-rating="3.7"
+                            data-overview="A suspenseful story about betrayal and hidden motives that spiral into deadly consequences."
+                            data-creator="Michael Johnson"
+                            data-poster="../img/trust.webp"
+                            data-bg="../imgBG/TrustBG.jpg"
+                            data-section="trending"
+                            >
+                            <img src="../img/trust.webp" alt="Trust">
+                            <div class="text">
+                                <h3>Trust</h3>
+                                <p>Thriller</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>3.7</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-12 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="The Conjuring: Last Rites"
+                            data-year="2025"
+                            data-genre="Horror"
+                            data-rating="6.4"
+                            data-overview="The Warrens face their most dangerous haunting yet as sinister forces return for one final battle."
+                            data-creator="James Wan"
+                            data-poster="../img/conjuring.webp"
+                            data-bg="../imgBG/CunjuringlastritesBG.jpg"
+                            data-section="trending"
+                            >
+                            <img src="../img/conjuring.webp" alt="The Conjuring: Last Rites">
+                            <div class="text">
+                                <h3>The Conjuring: Last Rites</h3>
+                                <p>Horror</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>6.4</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-13 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Jurassic Park"
+                            data-year="1993"
+                            data-genre="Adventure, Science Fiction"
+                            data-rating="9.3"
+                            data-overview="Scientists clone dinosaurs for a theme park, but the creatures escape, leading to chaos and survival."
+                            data-creator="Steven Spielberg"
+                            data-poster="../img/jurasic1993.webp"
+                            data-bg="../imgBg/Jurassicpark(1993)BG.webp"
+                            data-section="trending"
+                            >
+                            <img src="../img/jurasic1993.webp" alt="Jurassic Park">
+                            <div class="text">
+                                <h3>Jurassic Park</h3>
+                                <p>Adventure, Science Fiction</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>9.3</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-14 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="F1 The Movie"
+                            data-year="2024"
+                            data-genre="Action, Drama"
+                            data-rating="9.5"
+                            data-overview="A gripping story of passion and rivalry in the world of Formula 1 racing."
+                            data-creator="Lewis Turner"
+                            data-poster="../img/f1.webp"
+                            data-bg="../imgBG/f1themovieBG.png"
+                            data-section="trending"
+                            >
+                            <img src="../img/f1.webp" alt="F1 The Movie">
+                            <div class="text">
+                                <h3>F1 The Movie</h3>
+                                <p>Action, Drama</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>9.5</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-15 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Aztec Batman: Clash of Empires"
+                            data-year="2024"
+                            data-genre="Adventure, Animation, Fantasy, Sci-Fi"
+                            data-rating="7.0"
+                            data-overview="In an alternate Aztec empire, Batman rises as a warrior to battle invading forces and gods."
+                            data-creator="Guillermo Ortega"
+                            data-poster="../img/aztecbatman.webp"
+                            data-bg="../imgBG/AztecbatmanBG.jpg"
+                            data-section="trending"
+                            >
+                            <img src="../img/aztecbatman.webp" alt="Aztec Batman: Clash of Empires">
+                            <div class="text">
+                                <h3>Aztec Batman: Clash of Empires</h3>
+                                <p>Adventure, Animation, Fantasy, Sci-Fi</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.0</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-16 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Relay"
+                            data-year="2024"
+                            data-genre="Thriller, Drama"
+                            data-rating="7.1"
+                            data-overview="A tense story of deceit and survival where a covert mission spirals into a dangerous cat-and-mouse game."
+                            data-creator="Adam Mackay"
+                            data-poster="../img/relay.webp"
+                            data-bg="../imgBG/RelayBG.webp"
+                            data-section="trending"
+                            >
+                            <img src="../img/relay.webp" alt="Relay">
+                            <div class="text">
+                                <h3>Relay</h3>
+                                <p>Thriller, Drama</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.1</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-17 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Elio"
+                            data-year="2023"
+                            data-genre="Animation, Family, Comedy, Adventure, Science Fiction"
+                            data-rating="6.8"
+                            data-overview="A young boy from Earth is mistakenly beamed up into space and becomes Earth's intergalactic ambassador."
+                            data-creator="Adrian Molina"
+                            data-poster="../img/elio.webp"
+                            data-bg="../imgBG/ElioBG.webp"
+                            data-section="trending"
+                            >
+                            <img src="../img/elio.webp" alt="Elio">
+                            <div class="text">
+                                <h3>Elio</h3>
+                                <p>Animation, Family, Comedy, Adventure, Science Fiction</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>6.8</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-18 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="American Sweatshop"
+                            data-year="2023"
+                            data-genre="Drama, Mystery, Thriller"
+                            data-rating="6.0"
+                            data-overview="Workers uncover dark secrets in a sweatshop that hides corruption and deadly conspiracies."
+                            data-creator="Sarah Lopez"
+                            data-poster="../img/americansweathshop.webp"
+                            data-bg="../imgBG/AmericansweatshopBG.jpg"
+                            data-section="trending"
+                            >
+                            <img src="../img/americansweathshop.webp" alt="American Sweatshop">
+                            <div class="text">
+                                <h3>American Sweatshop</h3>
+                                <p>Drama, Mystery, Thriller</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>6.0</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Popular Movies Section -->
+                <div class="movies-section" id="popular-section">
+                    <div class="movies-container">
+                        <!-- Popular Movies -->
+                        <!-- box-1 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="War Of The Worlds"
+                            data-year="2005"
+                            data-genre="Science Fiction, Thriller"
+                            data-rating="4.5"
+                            data-overview="An alien invasion threatens to wipe out humanity as survivors struggle for survival."
+                            data-creator="Steven Spielberg"
+                            data-poster="../img/Waroftheworlds.webp"
+                            data-bg="../imgBG/WarofworldBG.webp"
+                            data-section="popular"
+                            >
+                            <img src="../img/Waroftheworlds.webp" alt="War Of The Worlds">
+                            <div class="text">
+                                <h3>War Of The Worlds</h3>
+                                <p>Science Fiction, Thriller</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>4.5</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-2 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="The Conjuring: Last Rites"
+                            data-year="2025"
+                            data-genre="Horror"
+                            data-rating="6.4"
+                            data-overview="The Warrens face their darkest and most dangerous haunting yet in the final chapter."
+                            data-creator="James Wan"
+                            data-poster="../img/conjuring.webp"
+                            data-bg="../imgBG/CunjuringlastritesBG.jpg"
+                            data-section="popular"
+                            >
+                            <img src="../img/conjuring.webp" alt="The Conjuring: Last Rites">
+                            <div class="text">
+                                <h3>The Conjuring: Last Rites</h3>
+                                <p>Horror</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>6.4</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-3 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Weapons"
+                            data-year="2023"
+                            data-genre="Horror, Mystery"
+                            data-rating="7.6"
+                            data-overview="A chilling tale unfolds when a town unearths weapons tied to a sinister mystery."
+                            data-creator="John Smith"
+                            data-poster="../img/weapons.webp"
+                            data-bg="../imgBG/weaponsBG.jfif"
+                            data-section="popular"
+                            >
+                            <img src="../img/weapons.webp" alt="Weapons">
+                            <div class="text">
+                                <h3>Weapons</h3>
+                                <p>Horror, Mystery</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.6</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-4 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Nobody 2"
+                            data-year="2025"
+                            data-genre="Action, Thriller"
+                            data-rating="6.4"
+                            data-overview="The unlikely hero returns for another brutal, action-packed battle for survival."
+                            data-creator="Ilya Naishuller"
+                            data-poster="../img/nobody.webp"
+                            data-bg="../imgBG/Nobody2BG.jpg"
+                            data-section="popular"
+                            >
+                            <img src="../img/nobody.webp" alt="Nobody 2">
+                            <div class="text">
+                                <h3>Nobody 2</h3>
+                                <p>Action, Thriller</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>6.4</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-5 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Superman"
+                            data-year="1978"
+                            data-genre="Science Fiction, Adventure, Action"
+                            data-rating="7.2"
+                            data-overview="An alien orphan raised on Earth becomes mankind's greatest protector and a beacon of hope."
+                            data-creator="Richard Donner"
+                            data-poster="../img/Superman.webp"
+                            data-bg="../imgBG/SupermanBG.jpg"
+                            data-section="popular"
+                            >
+                            <img src="../img/Superman.webp" alt="Superman">
+                            <div class="text">
+                                <h3>Superman</h3>
+                                <p>Science Fiction, Adventure, Action</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.2</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-6 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="As Good as Dead"
+                            data-year="2022"
+                            data-genre="Action, Crime"
+                            data-rating="8.2"
+                            data-overview="A gripping action thriller about a man forced to fight for his life when his past comes back to haunt him."
+                            data-creator="Randal Stevens"
+                            data-poster="../img/asgoodasdead.webp"
+                            data-bg="../imgBG/AsgoodasdeadBG.webp"
+                            data-section="popular"
+                            >
+                            <img src="../img/asgoodasdead.webp" alt="As Good as Dead">
+                            <div class="text">
+                                <h3>As Good as Dead</h3>
+                                <p>Action, Crime</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>8.2</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-7 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="The Naked Gun"
+                            data-year="1988"
+                            data-genre="Comedy, Action, Crime"
+                            data-rating="6.5"
+                            data-overview="A bumbling detective tries to stop a plot against the Queen of England in this hilarious classic spoof."
+                            data-creator="David Zucker"
+                            data-poster="../img/Nakedgun.webp"
+                            data-bg="../imgBG/NakedgunBG.jpg"
+                            data-section="popular"
+                            >
+                            <img src="../img/Nakedgun.webp" alt="The Naked Gun">
+                            <div class="text">
+                                <h3>The Naked Gun</h3>
+                                <p>Comedy, Action, Crime</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>6.5</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-8 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Detective Dee: The Four Heavenly Kings"
+                            data-year="2018"
+                            data-genre="Action, Fantasy, Adventure, Mystery"
+                            data-rating="6.3"
+                            data-overview="Detective Dee is called upon to protect the Tang Dynasty from supernatural forces and political schemes."
+                            data-creator="Tsui Hark"
+                            data-poster="../img/detectivedee.webp"
+                            data-bg="../imgBG/DetectivedeeBG.jpg"
+                            data-section="popular"
+                            >
+                            <img src="../img/detectivedee.webp" alt="Detective Dee: The Four Heavenly Kings">
+                            <div class="text">
+                                <h3>Detective Dee: The Four Heavenly Kings</h3>
+                                <p>Action, Fantasy, Adventure, Mystery</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>6.3</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-9 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Humane"
+                            data-year="2024"
+                            data-genre="Horror, Science Fiction, Thriller"
+                            data-rating="5.5"
+                            data-overview="A family dinner takes a terrifying turn as society collapses and dark secrets are revealed."
+                            data-creator="Caitlin Cronenberg"
+                            data-poster="../img/humane.webp"
+                            data-bg="../imgBG/HumaneBG.jpg"
+                            data-section="popular"
+                            >
+                            <img src="../img/humane.webp" alt="Humane">
+                            <div class="text">
+                                <h3>Humane</h3>
+                                <p>Horror, Science Fiction, Thriller</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>5.5</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-10 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Get Fast"
+                            data-year="2023"
+                            data-genre="Action, Crime, Thriller"
+                            data-rating="6.4"
+                            data-overview="A street racer is drawn into the underworld of crime when he must deliver a mysterious package at all costs."
+                            data-creator="Jason Cole"
+                            data-poster="../img/getfast.webp"
+                            data-bg="../imgBG/GetfastBG.png"
+                            data-section="popular"
+                            >
+                            <img src="../img/getfast.webp" alt="Get Fast">
+                            <div class="text">
+                                <h3>Get Fast</h3>
+                                <p>Action, Crime, Thriller</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>6.4</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-11 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="F1 The Movie"
+                            data-year="2024"
+                            data-genre="Action, Drama"
+                            data-rating="5.8"
+                            data-overview="A high-speed story about the thrilling world of Formula 1, blending intense drama with racing action."
+                            data-creator="James Hamilton"
+                            data-poster="../img/f1.webp"
+                            data-bg="../imgBG/f1themovieBg.png"
+                            data-section="popular"
+                            >
+                            <img src="../img/f1.webp" alt="F1 The Movie">
+                            <div class="text">
+                                <h3>F1 The Movie</h3>
+                                <p>Action, Drama</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>5.8</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-12 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Mission: Impossible - The Final Reckoning"
+                            data-year="2025"
+                            data-genre="Action, Adventure, Thriller"
+                            data-rating="7.3"
+                            data-overview="Ethan Hunt faces his most dangerous mission yet in this explosive finale of the Mission: Impossible saga."
+                            data-creator="Christopher McQuarrie"
+                            data-poster="../img/missionimposible.webp"
+                            data-bg="../imgBG/missionimBG.jpg"
+                            data-section="popular"
+                            >
+                            <img src="../img/missionimposible.webp" alt="Mission: Impossible - The Final Reckoning">
+                            <div class="text">
+                                <h3>Mission: Impossible - The Final Reckoning</h3>
+                                <p>Action, Adventure, Thriller</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.3</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-13 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Jurassic World Rebirth"
+                            data-year="2025"
+                            data-genre="Science Fiction, Adventure, Action"
+                            data-rating="5.9"
+                            data-overview="A new era begins as dinosaurs once again roam the Earth, and humanity struggles to survive their return."
+                            data-creator="Colin Trevorrow"
+                            data-poster="../img/jurasicrebirth.webp"
+                            data-bg="../imgBG/jurasicworldBG.webp"
+                            data-section="popular"
+                            >
+                            <img src="../img/jurasicrebirth.webp" alt="Jurassic World Rebirth">
+                            <div class="text">
+                                <h3>Jurassic World Rebirth</h3>
+                                <p>Science Fiction, Adventure, Action</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>5.9</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-14 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="How to Train Your Dragon"
+                            data-year="2010"
+                            data-genre="Fantasy, Family, Action, Adventure"
+                            data-rating="7.8"
+                            data-overview="A young Viking befriends a dragon, changing the future of his people in this heartwarming fantasy adventure."
+                            data-creator="Dean DeBlois"
+                            data-poster="../img/howtotraindragon.webp"
+                            data-bg="../imgBG/HowtotrainyourdragonBG.jpg"
+                            data-section="popular"
+                            >
+                            <img src="../img/howtotraindragon.webp" alt="How to Train Your Dragon">
+                            <div class="text">
+                                <h3>How to Train Your Dragon</h3>
+                                <p>Fantasy, Family, Action, Adventure</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.8</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-15 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Togethere"
+                            data-year="2023"
+                            data-genre="Horror, Romance"
+                            data-rating="6.8"
+                            data-overview="A chilling horror-romance where love and terror intertwine in unexpected ways."
+                            data-creator="Sarah Collins"
+                            data-poster="../img/togethere.webp"
+                            data-bg="../imgBG/TogetherBG.png"
+                            data-section="popular"
+                            >
+                            <img src="../img/togethere.webp" alt="Togethere">
+                            <div class="text">
+                                <h3>Togethere</h3>
+                                <p>Horror, Romance</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>6.8</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-16 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="Ice Road: Vengeance"
+                            data-year="2024"
+                            data-genre="Action, Thriller, Drama"
+                            data-rating="4.8"
+                            data-overview="A trucker returns to the icy roads on a dangerous mission of survival and vengeance."
+                            data-creator="Jonathan Hensleigh"
+                            data-poster="../img/Iceroad.webp"
+                            data-bg="../imgBG/IceroadBG.jpg"
+                            data-section="popular"
+                            >
+                            <img src="../img/Iceroad.webp" alt="Ice Road: Vengeance">
+                            <div class="text">
+                                <h3>Ice Road: Vengeance</h3>
+                                <p>Action, Thriller, Drama</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>4.8</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-17 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="KPop Demon Hunters"
+                            data-year="2024"
+                            data-genre="Animation, Comedy, Fantasy, Music"
+                            data-rating="7.6"
+                            data-overview="A KPop girl group fights off demons while balancing fame, friendship, and music."
+                            data-creator="Maggie Kang"
+                            data-poster="../img/k-pop.webp"
+                            data-bg="../imgBG/KpophuntersBG.webp"
+                            data-section="popular"
+                            >
+                            <img src="../img/k-pop.webp" alt="KPop Demon Hunters">
+                            <div class="text">
+                                <h3>KPop Demon Hunters</h3>
+                                <p>Animation, Comedy, Fantasy, Music</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.6</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                        <!-- box-18 -->
+                        <div class="box">
+                        <div class="box-img">
+                            <a 
+                            href="moviedetail.html"
+                            data-title="The Fantastic 4: First Steps"
+                            data-year="2025"
+                            data-genre="Science Fiction, Adventure"
+                            data-rating="7.3"
+                            data-overview="Marvel’s First Family embarks on their very first adventure as the Fantastic Four."
+                            data-creator="Matt Shakman"
+                            data-poster="../img/fantastic4.webp"
+                            data-bg="../imgBG/Fantastic4firststepBG.jpg"
+                            data-section="popular"
+                            >
+                            <img src="../img/fantastic4.webp" alt="The Fantastic 4: First Steps">
+                            <div class="text">
+                                <h3>The Fantastic 4: First Steps</h3>
+                                <p>Science Fiction, Adventure</p>
+                                <span><i class='bx bxs-star' style='color:#ddec00'></i>7.3</span>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+        <h2>MovieFlex</h2>
+        <p>Your ultimate destination for streaming movies & TV shows.</p>
+        </div>
+
+        <div class="footer-links">
+        <div class="footer-column">
+            <h4>Browse</h4>
+            <ul>
+            <li><a href="MovieSection.html">Movies</a></li>
+            <li><a href="tvshows.html">TV Shows</a></li>
+            <li><a href="watchlist.html">Watch List</a></li>
+            <li><a href="About.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Support</h4>
+            <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 MovieFlex. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../Js/main1.js"></script>
+</body>
+</html>
