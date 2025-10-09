@@ -39,6 +39,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
 
   // ✅ If all good, redirect
   if (isValid) {
-    window.location.href = "subscription.html";
+    window.location.href = "html/subscription.html";
   }
 });
+
