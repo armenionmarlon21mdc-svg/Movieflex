@@ -606,6 +606,19 @@ section{
 }
 
 /* Netflix-style Login Page */
+/* Left MOVIEFLEX text */
+.login-brand {
+  position: absolute;
+  left: 40px;
+  top: 5%;
+  transform: translateY(-50%);
+  color: #ff2c1f;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px rgba(255, 44, 31, 0.8);
+  font-family: 'Poppins', sans-serif;
+}
 .login-body {
   background: url("../img/AboutBG.jpg") no-repeat center center/cover; /* your background */
   min-height: 100vh;
@@ -946,7 +959,11 @@ section{
 }
 /* end of Footer */
 
-
+@media (max-width: 1912px){
+  .swiper-pagination{
+    top: 600px !important;
+  }
+}
 /* Responsive */
 @media (min-width: 1200px) {
   header {
@@ -1425,8 +1442,27 @@ section{
   .footer-bottom p {
     font-size: 0.8rem;
   }
+  /* Sign in */
+  .login-brand {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+  }
 
+  body.login-body {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+  }
+
+  .login-wrapper {
+    width: 90%;
+    padding: 30px 20px;
+  }
     
 
 }
+
 
