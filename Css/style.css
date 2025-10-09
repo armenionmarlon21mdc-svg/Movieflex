@@ -607,7 +607,7 @@ section{
 
 /* Netflix-style Login Page */
 .login-body {
-  background: url("/img/AboutBG.jpg") no-repeat center center/cover; /* your background */
+  background: url("img/AboutBG.jpg") no-repeat center center/cover; /* your background */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -1427,4 +1427,5 @@ section{
   }
 
     
+
 }
