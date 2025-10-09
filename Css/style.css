@@ -23,7 +23,7 @@ html {
 body{
     background: var(--text-color);
     color: var(--bg-color);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 header{
     position: fixed;
@@ -1261,12 +1261,61 @@ section{
 @media (max-width: 480px){
   header {
     padding: 10px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Make sure header stays above everything */
   }
   header .logo {
     font-size: 1.1rem;
   }
+    /* Default hidden navbar */
+  .navbar {
+    position: absolute;
+    top: -570px; /* Hidden off-screen */
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--bg-color);
+    row-gap: 1.4rem;
+    padding: 20px;
+    box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+    transition: top 0.3s ease;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+  }
+    .navbar a {
+    color: var(--text-color);
+  }
+
+  .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+  }
+
+  .navbar a::after {
+    display: none;
+  }
+
+  /* When active — show dropdown */
+  .navbar.active {
+    top: 100%; /* Drop down below header */
+    z-index: 9999;
+  }
+
+  /* Hide search and sign-out button when menu active */
+  .navbar.active ~ .search-icon,
+  .navbar.active ~ .btn {
+    display: none;
+  }
   #menu-icon {
+    display: block;
+    color: var(--bg-color);
     font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 10001;
   }
   .btn {
     padding: 6px 12px;
@@ -1464,5 +1513,6 @@ section{
     
 
 }
+
 
 
