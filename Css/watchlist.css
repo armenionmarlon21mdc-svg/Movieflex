@@ -234,9 +234,9 @@ header{
   #menu-icon {
     display: block;
     color: var(--bg-color);
-  }
-  #menu-icon {
     font-size: 1.8rem;
+    z-index: 2000;
+    cursor: pointer;
   }
   /* Hide navbar by default on mobile */
   .navbar{
@@ -285,4 +285,5 @@ header{
     width: calc((100% / 3) - 1rem);
   }
 }
+
 
