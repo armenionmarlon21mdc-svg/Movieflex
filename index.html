@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - MovieFlex</title>
+  <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body class="login-body">
+
+  <div class="login-wrapper">
+    <div class="login-box">
+      <h1>Sign In</h1>
+      <form id="loginForm">
+        <div class="input-group">
+          <input type="text" id="loginEmail" placeholder="Email or mobile number" required>
+          <p class="error-message" id="emailError"></p>
+        </div>
+        <div class="input-group">
+          <input type="password" id="loginPassword" placeholder="Password" required>
+          <p class="error-message" id="passwordError"></p>
+        </div>
+        <button type="submit" class="btn-login">Sign In</button>
+        <p class="or">OR</p>
+        <a href="subscription.html"><button type="button" class="btn-code">Use a Sign-In Code</button></a>
+        <a href="#" class="forgot">Forgot password?</a>
+        <div class="options">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <p class="signup">New to MovieFlex? <a href="#">Sign up now.</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="Js/filters.js"></script>
+  
+</body>
+</html>
